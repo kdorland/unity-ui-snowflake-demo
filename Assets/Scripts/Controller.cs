@@ -10,7 +10,10 @@ public class Controller : MonoBehaviour {
 
     public void Start()
     {
-        controls.SetActive(false);
+        if (controls != null)
+        {
+            controls.SetActive(false);
+        }
     }
 
     public void Log(string s)
